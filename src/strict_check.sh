@@ -21,6 +21,21 @@ for file in "$@"; do
         grep -n '\bregister\s\+' "$file"
         ERRORS=$((ERRORS + 1))
     fi
+
+    # Check for unsafe strcpy() instead of strncpy/memcpy_s
+    if grep -n '\bstrcpy\s*(' "$file" > /dev/null; then
+        echo "  [!] $file: Unsafe string copy - use safer alternatives."
+        grep -n '\bstrcpy\s*(' "$file"
+        ERRORS=$((ERRORS + 1))
+    fi
+
+    # Check for unvalidated malloc (naked malloc without NULL check handling or pattern)
+    if grep -n '\bmalloc\s*(' "$file" > /dev/null; then
+        # Simple heuristic check for direct assignments without immediate null checking
+        if grep -n '=\s*malloc\s*(' "$file" > /dev/null; then
+            echo "  [i] $file: Notice - ensure malloc return values are explicitly validated against NULL."
+        fi
+    fi
 done
 
 exit $ERRORS
