@@ -1,0 +1,2 @@
+#!/bin/sh
+sh src/strict_check.sh tests/fixtures/*.c src/*.c include/*.h

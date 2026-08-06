@@ -1,0 +1,19 @@
+name: Strict C11 Compliance
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Run Strict C11 Linter
+        run: |
+          chmod +x src/strict_check.sh check
+          ./check

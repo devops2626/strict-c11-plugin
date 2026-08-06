@@ -1,0 +1,1 @@
+ERROR: Implicit int return type or parameter declaration detected.

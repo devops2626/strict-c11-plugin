@@ -1,0 +1,14 @@
+1653346453ef40b8c8d433c461c37488  sbin/mkhomedir_helper
+a0480e5e8fd02c1396f6b89c2dd3db92  sbin/pam_extrausers_chkpwd
+f08c66fff6713ab4bbe2ddd5e006ecb2  sbin/pam_extrausers_update
+c70d08a177d36d8a699f55999d04034c  sbin/pam_tally
+fe3da3631400c76bebbba64056ab655c  sbin/pam_tally2
+26b857ebe71ce906352c5ba8170d608f  sbin/unix_chkpwd
+13fe97bf2c34fd57368022a973322139  sbin/unix_update
+ad2488da7826d4aca9dacbf0b83a8dbd  usr/sbin/pam_timestamp_check
+6c05e902bc75c9e6d2da3ac75da5d47b  usr/share/doc/libpam-modules-bin/copyright
+1aa5f5cd001628d1486b45e2200309aa  usr/share/lintian/overrides/libpam-modules-bin
+8048f18037e5c2be1b67b787a6430c08  usr/share/man/man8/mkhomedir_helper.8.gz
+67587515d684c802ada571d7c3ac8c58  usr/share/man/man8/pam_timestamp_check.8.gz
+1991d2bc79af385153088b487714fdfd  usr/share/man/man8/unix_chkpwd.8.gz
+fa5b3a9a15bfa4d9ff46a6b26da4bcee  usr/share/man/man8/unix_update.8.gz

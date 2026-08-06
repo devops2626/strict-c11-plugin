@@ -1,0 +1,1 @@
+ERROR: Old-style (K&R) function definition detected.

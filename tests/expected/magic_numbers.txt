@@ -1,0 +1,2 @@
+ERROR: Naked magic number detected: 42
+ERROR: Naked magic number detected: 100
