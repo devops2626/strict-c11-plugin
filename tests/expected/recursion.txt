@@ -1,0 +1,1 @@
+ERROR: Direct recursion detected in function 'factorial'.

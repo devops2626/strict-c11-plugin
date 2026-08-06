@@ -1,0 +1,1 @@
+ERROR: Global shared variable 'counter' missing '_Atomic' qualifier.
