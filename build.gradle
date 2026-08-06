@@ -1,0 +1,24 @@
+plugins {
+    id 'groovy'
+    id 'java-gradle-plugin'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation localGroovy()
+}
+
+gradlePlugin {
+    plugins {
+        strictC11 {
+            id = 'dev.ops.strict-c11'
+            implementationClass = 'dev.ops.StrictC11Plugin'
+        }
+    }
+}
+
+group = 'dev.ops'
+version = '1.0.0'
